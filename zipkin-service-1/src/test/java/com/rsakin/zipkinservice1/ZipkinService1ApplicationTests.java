@@ -1,4 +1,4 @@
-//package com.example.zipkinservice3;
+//package com.rsakin.zipkinservice1;
 //
 //import org.junit.Test;
 //import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@
 //
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
-//public class ZipkinService3ApplicationTests {
+//public class ZipkinService1ApplicationTests {
 //
 //	@Test
 //	public void contextLoads() {
