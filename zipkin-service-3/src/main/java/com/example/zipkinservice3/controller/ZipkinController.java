@@ -31,13 +31,13 @@ public class ZipkinController {
     public String zipkinService1() {
         log.info("Inside zipkinService 3..");
 
-        String response = restTemplate.exchange("http://localhost:8084/zipkin4",
+        String response = restTemplate.exchange("http://zipkin-service-4:8084/zipkin4",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<String>() {
                 }).getBody();
         log.info("Response : {}", response);
 
-        return "Hi...";
+        return "Come on, move move!";
     }
 }

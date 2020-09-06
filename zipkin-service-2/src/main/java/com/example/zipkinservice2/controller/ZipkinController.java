@@ -32,10 +32,10 @@ public class ZipkinController {
     public String zipkinService1() throws InterruptedException {
         log.info("Inside zipkinService 2..");
         log.info("Now let's create some intentional delay...");
-        Thread.sleep(20000);
+        Thread.sleep(5000);
         log.info("returning after delay..");
 
-        return restTemplate.exchange("http://localhost:8083/zipkin3",
+        return restTemplate.exchange("http://zipkin-service-3:8083/zipkin3",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<String>() {

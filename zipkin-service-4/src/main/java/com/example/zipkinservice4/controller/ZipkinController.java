@@ -26,6 +26,8 @@ public class ZipkinController {
     @GetMapping(value = "/zipkin4")
     public String zipkinService1() {
         log.info("Inside zipkinService 4..");
-        return "Hi...";
+        log.info("Mission Completed! --- :) ---");
+
+        return "Mission Completed!";
     }
 }

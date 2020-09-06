@@ -31,7 +31,7 @@ public class ZipkinController {
     public String zipkinService1() {
         log.info("Inside zipkinService 1..");
 
-        String response = restTemplate.exchange("http://localhost:8082/zipkin2",
+        String response = restTemplate.exchange("http://zipkin-service-2:8082/zipkin2",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<String>() {
@@ -39,7 +39,7 @@ public class ZipkinController {
 
         log.info("Zipkin2 restTEmplate response : {}", response);
 
-        return "Hi...";
+        return "Hi, Welcome!";
     }
 }
 
