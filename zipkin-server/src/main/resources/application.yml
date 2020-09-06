@@ -1,2 +1,12 @@
-server:
-  port: ${PORT:9411}
+logging:
+  level.org.springframework.cloud: DEBUG
+  spring:
+    application:
+      name: zipkin-server
+    sleuth:
+      enabled: false
+  zipkin:
+    storage:
+      type: mem
+  server:
+    port: 9411
