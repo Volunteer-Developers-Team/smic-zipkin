@@ -1,9 +1,9 @@
 version: '3.5'
 services:
   zipkin-server:
-    image: rsakin/zipkin-service
+    image: rsakin/zipkin-server
     build:
-      context: ./zipkin-service
+      context: ./zipkin-server
       dockerfile: Dockerfile
     ports:
       - "9411:9411"
