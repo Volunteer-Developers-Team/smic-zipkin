@@ -1,7 +1,8 @@
-sleuth:
-  enabled: true
-  sampler:
-    percentage: 1
+spring:
+  sleuth:
+    enabled: true
+    sampler:
+      percentage: 1.0
   zipkin:
     enabled: true
-    baseUrl: http://zipkin-server:9411
+    base-url: http://zipkin-server:9411
